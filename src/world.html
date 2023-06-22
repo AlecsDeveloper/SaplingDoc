@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sapling Doc > World</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Navegation bar -->
+        <div class="nav">
+            <center>
+                <a href="https://discord.com/invite/96Uyt3KWT5" target="_blank">Contacto</a>
+            </center> 
+            <span>Sapling Doc</span>
+        </div>
+
+        <!-- Menu -->
+        
+        <div class="menu" id="menu"></div>
+
+        <div class="guide">
+            <header id="Introduccion">
+                <br> <h1>Módulo World</h1> <br>
+                <div class="space"></div>
+            </header>
+            
+            <!-- ¿Que es? -->
+            <div class="section" id="¿Que-es?">
+                <h2>¿Qué es?</h2> <br>
+                <p>
+                    El módulo World es el encargado de la manipulación de eventos del mundo, siendo este el responsable de agregar funciones enfocadas a bloque dentro del juego.
+                </p> <br>
+            </div> <br>
+
+            <!-- Comandos -->
+            <div class="section" id="Comandos">
+                <h2>Comandos</h2><br>
+                <p>
+                    Los comandos disponibles en el módulo world son los siguientes:
+                </p><br>
+                <img src="../img/worldCmds.png" alt="Comandos referentes al modulo"> <br> <br>
+                <p>
+                    Cada comando puede habilitar o deshabilitar una función del módulo.
+                </p>
+            </div> <br>
+            <div class="space"></div>
+
+            <!-- Funciones -->
+
+            <header id="Funciones">
+                <br> <h1>Funciones</h1> <br>
+                <div class="space"></div>
+            </header>
+
+            <!-- endPortalGBD -->
+            <div class="section" id="endPortalGBD">
+                <h2>End Portal GBD</h2> <br>
+                <p>
+                    En minecraft bedrock, en anteriores versiones era posible duplicar bloques de gravedad (arena, grava, concreto, etc) mediante un portal del end, esto sucedia 
+                    <br> <br>
+                    Sapling proporciona la capacidad de volver a habilitar una duplicación de bloques de gravedad similar a la de antiguas versiones, a continuación habrá un video de su funcionamiento. 
+                </p> <br> <br>
+                <video src="../img/endPortalGBD.mp4" width="60%" controls>
+                    Video respectivo al funcionamiento de end portal gbd
+                </video> <br><br>
+                <img src="../img/gbd.png" alt="Funcionamiento de la duplicación" width="60%"> <br> <br>
+            </div> <br>
+
+            <div class="space"></div>
+
+            <!-- anvilBedrockBreaker -->
+            <div class="section" id="anvilBedrockBreaker">
+                <h2>Anvil Bedrock Breaker</h2> <br>
+                <p>
+                    En Minecraft han existido diferentes métodos para romper bedrock (bloque indestructible) mediante errores y exploits dentro del juego, actualmente no existen o no se han descubierto errores o exploits en las nuevas versiones, por lo que no es posible romper dichos bloques.
+                    <br> <br>
+                    La finalidad de esta primera función es implementar una mecánica de ruptura basada en yunques y colisiones de pistones. En esta primera función, el método consiste en un simple paso: que un yunque caiga al lado de un pistón activo mirando hacia el bloque de abajo.
+                </p> <br> <br>
+                <img src="../img/anvil.png" alt="Método de ruptura con yunque" width="60%">
+            </div> <br>
+
+            <div class="space"></div>
+
+            <!-- cauldronBedrockBreaker -->
+            <div class="section" id="cauldronBedrockBreaker">              
+                <h2>Cauldron Bedrock Breaker</h2> <br>
+                <p>
+                    Cómo se menciona <a href="#anvilBedrockBreaker" style="color: #a05ddf;">anteriormente</a>, se fueron arreglando los métodos de ruptura a medida de cómo se fue actualizando el juego, uno de los métodos que fueron solucionados fue el método del caldero y nieve en polvo.
+                    <br> <br>
+                    La finalidad de esta segunda función enfocada a romper bedrock es regresar el error eliminado, a continuación habrá un ejemplo de su funcionamiento.
+                </p> <br> <br>
+                <img src="../img/cauldron.gif" alt="Método de ruptura con caldero" width="60%">
+            </div> <br>
+
+            <div class="space"></div>
+
+            <!-- renewableSoulSand -->
+            <div class="section" id="renewableSoulSand">
+                <h2>Renewable Soulsand</h2> <br>
+                <p>
+                    Con esta función se habilita la posibilidad de generar bloques de arena de almas cuando un esqueleto o zombie muere por quemadura encima de un bloque de arena.
+                </p> <br> <br>
+                <img src="../img/soul.jpg" alt="Mecánica rena de almas renovable" width="60%">
+            </div> <br>
+
+            <div class="space"></div>
+            <br><br><br><br>
+        </div>
+    </body>
+    <script src="../assets/events.js"></script>
+    <script src="../assets/menu.js"></script>
+</html>

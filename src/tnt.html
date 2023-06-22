@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sapling Doc > TNT</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Navegation bar -->
+        <div class="nav">
+            <center>
+                <a href="https://discord.com/invite/96Uyt3KWT5" target="_blank">Contacto</a>
+            </center> 
+            <span>Sapling Doc</span>
+        </div>
+
+        <!-- Menu -->
+        
+        <div class="menu" id="menu"></div>
+
+        <div class="guide">
+            <header id="Introduccion">
+                <br> <h1>Módulo TNT</h1> <br>
+                <div class="space"></div>
+            </header>
+            
+            <!-- ¿Que es? -->
+            <div class="section" id="¿Que-es?">
+                <h2>¿Qué es?</h2> <br>
+                <p>
+                    El módulo TNT es el encargado de la manipulación de explosiones del mundo, siendo este el responsable de agregar funciones antes y después de cada explosión dentro del juego.
+                </p> <br>
+            </div> <br>
+
+            <!-- Comandos -->
+            <div class="section" id="Comandos">
+                <h2>Comandos</h2><br>
+                <p>
+                    Los comandos disponibles en el módulo TNT son los siguientes:
+                </p><br>
+                <img src="../img/tntCmds.png" alt="Comandos referentes al modulo"> <br> <br>
+                <p>
+                    Cada comando puede habilitar o deshabilitar una función del módulo.
+                </p>
+            </div> <br>
+            <div class="space"></div>
+
+            <!-- Funciones -->
+
+            <header id="Funciones">
+                <br> <h1>Funciones</h1> <br>
+                <div class="space"></div>
+            </header>
+
+            <!-- tntDuping -->
+            <div class="section" id="tntDuping">
+                <h2>TNT Duping</h2> <br>
+                <p>
+                    En Minecraft Bedrock, no existe una manera de hacer duplicación de TNT debido a que rompe el juego en términos de la propia desarrolladora <span style="color: crimson;">(Mojang Studios)</span>. No obstante, una de las funciones de Sapling es habilitar dicha capacidad para duplicar TNT mediante un bloque en concreto: el bloque de notas.
+                    <br> <br> 
+                    A continuación estará un pequeño video de la duplicación de TNT con la función activada.
+                </p> <br>
+                <video src="../img/tntDuping.mp4" width="60%" controls>
+                    Video respectivo al funcionamiento de tnt duping
+                </video> <br>
+            </div> <br>
+
+            <div class="space"></div>
+
+            <!-- tntDropAllBlocks -->
+            <div class="section" id="tntDropAllBlocks">
+                <h2>TNT Drop All Blocks</h2> <br>
+                <p>
+                    En Minecraft Bedrock, la TNT después de explotar no deja todos los items de los bloques que explota, esto se debe a que se aplica una aleatoriedad para verificar si el bloque soltará su respectivo item o no.
+                    <br> <br>
+                    Es por esto mismo que Sapling proporciona la capacidad de desactivar esta aleatoriedad para que los bloques siempre suelten su item. Esto resulta muy útil cuando se requiere automatizar una granja de cualquier bloque y obtener mayor eficiencia en los items que droppea.
+                </p>
+            </div> <br>
+
+            <div class="space"></div>
+
+            <!-- tntNotExplodes -->
+            <div class="section" id="tntNoExplodes">
+                <h2>TNT No Explodes</h2> <br>
+                <p>
+                    Cuando se trata de diseño de mecanismos, al usar la TNT siempre existirá el riesgo de que por un error en el temporizador la TNT explote y destruya todo el mecanismo. Esta función está específicamente diseñada para deshabilitar la explosión y evitar perder mecanismos en la etapa de diseño.     
+                </p>
+            </div> <br>
+
+            <div class="space"></div>
+
+            <!-- tntNoDrops -->
+            <div class="section" id="tntNoDrops">
+                <h2>TNT No Drops</h2> <br>
+                <p>
+                    Un perímetro es una zona sin contenido dentro de una respectiva área dentro del mundo, esto se hace con la finalidad de que el juego opere menos datos y por ende aumente el rendimiento del mundo en dicha zona, mientras menos datos se carguen por jugador el juego irá más estable en TPS <span style="color: limegreen;">(Ticks Per Second)</span>, para un rendimiento del 100% el juego deberá ir a 20 TPS, de lo contrario por cada TPS que el juego baje disminuirá en un 5% la eficiencia del mundo.
+                    <br> <br>
+                    La finalidad de esta función es permitir un control mayor a la hora de hacer perímetros debido a que dicha función elimina el dropeo de items de los bloques, por ende el mundo no se saturará de items y tendrá una mayor eficiencia de TPS debido a que no habrá que operar los datos de las entidades (items en este caso). 
+                </p>
+            </div> <br> <br>
+            <div class="space"></div>
+            <br><br><br><br>
+        </div>
+    </body>
+    <script src="../assets/events.js"></script>
+    <script src="../assets/menu.js"></script>
+</html>

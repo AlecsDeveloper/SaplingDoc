@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sapling Doc > Introducción</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Navegation bar -->
+        <div class="nav">
+            <center>
+                <a href="https://discord.com/invite/96Uyt3KWT5" target="_blank">Contacto</a>
+            </center> 
+            <span>Sapling Doc</span>
+        </div>
+
+        <!-- Menu -->
+
+        <div class="menu" id="menu"></div>
+
+        <div class="guide">
+            <header id="Introduccion" id="#Introduccion">
+                <br> <h1>Introduccion</h1> <br>
+                <div class="space"></div>
+            </header>
+            <div class="section" id="¿Que-es?">
+                <h2>¿Qué es?</h2> <br>
+                <p>
+                    Sapling es un complemento para <span style="color: blueviolet;">Minecraft Bedrock Edition</span> el cual proporciona comandos internos dentro del juego, cada uno con sub-comandos con argumentos.
+                    <br><br>
+                    Siendo este complemento enfocado a la información de los mundos, generación de jugadores y agregado de nuevas funciones al juego.
+                </p> <br>
+            </div> <br>
+            <div class="space"></div>
+            <div class="section" id="¿Como-funciona?">
+                <h2>¿Cómo funciona?</h2> <br>
+                <p>
+                    Sapling está escrito completamente en <span style="color: rgb(32, 165, 43);">JavaScript</span> dentro de una API de Scripting del propio juego. Sapling se conforma por un núcleo principal que es capaz de proporcionar algunos de los siguientes aspectos: <br><br> - Lectura NBT <br> - Empaquetador de paquetes de comandos avanzados <br> - Envío de mensajes desde el servidor al cliente. 
+                    <br><br>
+                    Sapling corre en una instancia <span style="color: blueviolet;">Gametest</span> la cual permite hacer la incorporación de la lectura de datos y generación de jugadores, además de proporcionar una capa extra de modificación del juego, puesto que dicha instancia cuenta con mayores funciones a nivel interno dentro de la Scripting API.
+                </p> <br>
+            </div> <br>
+            <div class="space"></div>
+            <div class="section" id="Instancia">
+                <h2>Instancia Gametest</h2> <br>
+                <p>
+                    Crear una instancia Gametest dentro de la Scripting API es bastante sencillo, a continuación habrá un ejemplo del codigo inicial.
+                </p> <br>
+                <p class="code-text"> <br>
+                     import <span style="color:#a365dd;">*</span> as <br> GameTest from <br> '@minecraft/server-gametest' <br><br>
+                     GameTest.Register('Namespace', 'Name',<span style="color:#e9974b;"> event</span> => { <br>
+                         <span style="color:gray;">   /* Codigo dentro de la instancia */</span> <br>
+                     }) <br>
+                        .maxTicks(<span style="color:#a365dd;">999999999</span>) <br>
+                        .structureName('SP:Instancia');
+                <br></p> <br>
+                <p>
+                    Como se puede observar, la instancia regresa un callback definido como <span style="color: #e9974b;">event</span> el cual regresará 3 métodos especiales los cuales son:<br><br>
+                      - SimulatedPlayer <br>
+                      - FenceConnectivity <br>
+                      - SculkSpreader
+                </p>
+            </div> <br> <br>
+            <div class="space"></div>
+            <br><br><br><br>
+        </div>
+    </body>
+    <script src="../assets/events.js"></script>
+    <script src="../assets/code.js"></script>
+    <script src="../assets/menu.js"></script>
+</html>

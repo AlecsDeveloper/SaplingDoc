@@ -1,0 +1,126 @@
+/* Variables */
+
+@font-face {
+    font-family: MinecraftLogo;
+    src: url('./assets/Minercraftory.ttf');
+}
+
+@font-face {
+    font-family: Mojangles;
+    src: url('./assets/Mojangles.ttf');
+}
+
+:root {
+    --navColor: rgb(39, 168, 125);
+    --navColorHover: rgb(36, 133, 93);
+    --scrollBarColor: rgb(77, 172, 59);
+    --scrollBarColorSelect: rgb(134, 214, 118);
+    --globalFont: Mojangles;
+}
+
+.space { width: 99%; height: 2px; background-color: gray; margin: 0 auto; }
+
+
+/* Mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Global */
+        --textColor: #000000;
+        /* Guide */
+        --guideBgColor: #f3f3f3;
+        /* Menu */
+        --menuBgColor: #e4e4e4;
+        --menuCl1: #d1d1d1;
+        --menuCl2: #c2c2c2;
+        --menuTxtColor: #5c1e96;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Global */
+        --textColor: #ffffff;
+        /* Guide */
+        --guideBgColor: #363636;
+        /* Menu */
+        --menuBgColor: #2b2b2b;
+        --menuCl1: #3d3d3d;
+        --menuCl2: #333333;
+        --menuTxtColor: #ae74e4;
+    }
+}
+
+
+/* Body */
+
+    /* Global */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        user-select: none;
+        color: var(--textColor);
+        background-color: var(--guideBgColor);
+    }
+
+
+    /* Navegation bar */
+    .nav {
+        height: 34px;
+        background-color: var(--navColor)
+    }
+
+    .nav a {
+        display: flex; float: left;
+        width: 80px; height: 34px;
+        background-color: var(--navColor);
+        text-decoration: none; color: white;
+        justify-content: center; align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+    }
+
+    .nav span {
+        display: flex; float: right;
+        width: 200px; height: 34px;
+        background-color: var(--navColor);
+        text-decoration: none; color: white;
+        justify-content: center; align-items: center;
+        font-family: MinecraftLogo;
+        font-size: 20px; margin-right: 20px;
+    }
+
+    .nav a:hover { background-color: var(--navColorHover); }
+
+    /* Text */
+
+    center h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-family: MinecraftLogo;
+        letter-spacing: 1px;
+    }
+
+    center h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 18px; width: 800px;
+        font-family: MinecraftLogo;
+        letter-spacing: 1px;
+    }
+
+    center button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 300px; padding: 10px;
+        border: none; background-color: #559944;
+        color: #f3f3f3;
+    }
+
+    center button:hover { background-color: #488f36; }
+
+    center footer {
+        margin-top: 3%;
+        font-family: Mojangles;
+    }
+
